@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Time-in-Status Badge</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #172B4D; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  code { background: #F4F5F7; padding: 2px 5px; border-radius: 3px; }
+  .placeholder { background: #FFFAE6; padding: 1px 4px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p><strong>Time-in-Status Badge</strong> for Jira Cloud<br>
+Last updated: 2026-08-24</p>
+
+<p>This Privacy Policy explains what data Time-in-Status Badge ("the App") accesses, how it is used, and where it is stored.</p>
+
+<h2>What the App is</h2>
+<p>The App is an Atlassian Forge app that runs entirely inside Atlassian's Forge platform. It has no servers, databases, or infrastructure of its own outside of Forge — Atlassian hosts and secures the runtime and any stored data.</p>
+
+<h2>Data the App accesses</h2>
+<p>To calculate how long issues spend in each workflow status, the App reads the following from your Jira site using the <code>read:jira-work</code> permission scope:</p>
+<ul>
+  <li>Issue keys, summaries, and status change history (changelog)</li>
+  <li>Project and workflow status configuration</li>
+  <li>Your Jira account permissions, to confirm you're a project admin before allowing changes to project settings</li>
+</ul>
+<p>This data is read on demand each time you open the issue panel, dashboard, or settings page. The App does not copy or persist your issue data — durations are calculated live and are not saved anywhere.</p>
+
+<h2>Data the App stores</h2>
+<p>The only data the App stores is project-level configuration that an admin explicitly sets, such as status thresholds and business-hours settings. This is stored using Forge's built-in <code>storage:app</code> API, which keeps it within Atlassian's Forge infrastructure for your site. No issue data, and no data about individual users, is stored.</p>
+
+<h2>CSV export</h2>
+<p>The dashboard's CSV export is generated and downloaded directly in your browser. No data is sent to the App's developer or to any third party as part of this feature.</p>
+
+<h2>Data sharing</h2>
+<p>The App does not sell, share, or transmit any data to third parties. It does not use analytics, tracking, or advertising services of any kind.</p>
+
+<h2>Data retention and deletion</h2>
+<p>Stored configuration (thresholds/business-hours settings) is kept until you change it or until the App is uninstalled from your site, at which point Atlassian removes the App's stored data in accordance with Forge's standard app-uninstall data handling.</p>
+
+<h2>Security</h2>
+<p>The App relies on Atlassian Forge's platform security model — it runs in Atlassian's infrastructure, under Atlassian's security and compliance controls, rather than on any infrastructure operated by the App's developer.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the App's data handling can be sent to <span class="placeholder">support@releasybot.com</span>.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this same URL with a revised "Last updated" date.</p>
+
+</body>
+</html>
